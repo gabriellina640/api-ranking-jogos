@@ -14,8 +14,12 @@ use App\Http\Controllers\GameController;
 |
 */
 Route::prefix('v1')->group(function () {
-    Route::get('/rankings/general', [GameController::class, 'generalRanking']);
+    Route::get('/rankings/weekly', [GameController::class, 'weeklyRanking']);
+    Route::get('/rankings/monthly', [GameController::class, 'monthlyRanking']);
+    Route::get('/rankings/yearly', [GameController::class, 'yearlyRanking']);
+    Route::get('/rankings/history/{id}', [GameController::class, 'history']);
     Route::get('/games/most-played', [GameController::class, 'mostPlayed']);
+    
     Route::get('/rankings/platforms/{platform}', [GameController::class, 'platformRanking']);
 });
 
