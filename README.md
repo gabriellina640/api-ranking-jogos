@@ -55,6 +55,29 @@ O serviço possui as seguintes responsabilidades:
 
 ---
 
+# 📂 Estrutura do Repositório
+
+Este repositório não está organizado como monorepo. Ele contém apenas o microsserviço backend da API de rankings de jogos.
+
+| Serviço | Pasta | Descrição |
+| ------- | ----- | --------- |
+| API de Rankings de Jogos | `/` | Backend Laravel responsável pelas rotas, autenticação JWT, rankings e documentação Scribe |
+
+Principais pastas do serviço:
+
+| Pasta | Finalidade |
+| ----- | ---------- |
+| `app/Http/Controllers` | Controllers da API |
+| `app/Http/Middleware` | Middlewares, incluindo autenticação JWT |
+| `app/Models` | Models Eloquent |
+| `routes` | Definição das rotas web e API |
+| `database/migrations` | Estrutura das tabelas |
+| `database/seeders` | Dados iniciais para testes e demonstração |
+| `resources/views/scribe` | Documentação HTML gerada pelo Scribe |
+| `public/vendor/scribe` | Arquivos públicos da documentação |
+
+---
+
 # ✅ Requisitos Necessários
 
 Antes de executar o projeto, é necessário possuir instalado:
