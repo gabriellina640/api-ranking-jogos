@@ -12,7 +12,8 @@ class GameController extends Controller
 {
     /**
      * Top semanal
-     * * Retorna o ranking dos jogos com melhor desempenho na última semana.
+     *
+     * Retorna o ranking dos jogos com melhor desempenho na última semana.
      */
     public function weeklyRanking()
     {
@@ -22,7 +23,8 @@ class GameController extends Controller
 
     /**
      * Top mensal
-     * * Retorna o ranking dos jogos com melhor desempenho no último mês.
+     *
+     * Retorna o ranking dos jogos com melhor desempenho no último mês.
      */
     public function monthlyRanking()
     {
@@ -32,7 +34,8 @@ class GameController extends Controller
 
     /**
      * Top anual
-     * * Retorna o ranking dos jogos com melhor desempenho no último ano.
+     *
+     * Retorna o ranking dos jogos com melhor desempenho no último ano.
      */
     public function yearlyRanking()
     {
@@ -42,7 +45,8 @@ class GameController extends Controller
 
     /**
      * Jogos mais jogados
-     * * Retorna o top 10 jogos com base no número de jogadores ativos.
+     *
+     * Retorna o top 10 jogos com base no número de jogadores ativos.
      */
     public function mostPlayed()
     {
@@ -52,7 +56,9 @@ class GameController extends Controller
 
     /**
      * Histórico de ranking
-     * * Retorna a evolução de um jogo específico ao longo do tempo.
+     *
+     * Retorna a evolução de um jogo específico ao longo do tempo.
+     *
      * @urlParam id int required O ID do jogo. Example: 1
      */
     public function history($id)
@@ -69,7 +75,9 @@ class GameController extends Controller
     }
     /**
      * Ranking por Plataforma
-     * * Retorna os jogos mais bem ranqueados de uma plataforma específica.
+     *
+     * Retorna os jogos mais bem ranqueados de uma plataforma específica.
+     *
      * @urlParam platform string required O nome da plataforma. Example: Steam
      */
     public function platformRanking($platform)
