@@ -24,7 +24,6 @@ Route::prefix('v1')->middleware(['jwt.auth'])->group(function () {
 
 });
 
-// 🔓 Rota de teste (opcional)
 Route::middleware(['jwt.auth'])->get('/test-auth', function (Request $request) {
     return response()->json([
         'userId' => $request->attributes->get('auth')['id']
