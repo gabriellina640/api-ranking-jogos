@@ -3,7 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "node -e \"console.log('No frontend build required for this API')\""
     },
     "devDependencies": {
         "axios": "^1.6.4",
