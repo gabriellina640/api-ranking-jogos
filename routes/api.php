@@ -21,7 +21,10 @@ Route::prefix('v1')->middleware(['jwt.auth'])->group(function () {
 
     // Jogos
     Route::get('/games/most-played', [GameController::class, 'mostPlayed']);
+});
 
+Route::get('/health', function () {
+    return response()->json(['status' => 'ok']);
 });
 
 Route::middleware(['jwt.auth'])->get('/test-auth', function (Request $request) {
